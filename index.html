@@ -7,37 +7,109 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <div class="grid-container">
-      <div class="header">a</div>
-      <div class="sidebar">
-        <div class="logo">
-          <div class="grid-icon">*</div>
-          <div class="grid-item heading last">Dashboard</div>
-        </div>
-        <div class="main-nav">
-          <div class="grid-icon">*</div>
-          <div class="grid-icon">*</div>
-          <div class="grid-icon">*</div>
-          <div class="grid-icon">*</div>
-          <div class="grid-icon">*</div>
-          <div class="grid-icon">*</div>
-          <div class="grid-item">Home</div>
-          <div class="grid-item">Profile</div>
-          <div class="grid-item">Messages</div>
-          <div class="grid-item">History</div>
-          <div class="grid-item">Tasks</div>
-          <div class="grid-item last">Communities</div>
-        </div>
-        <div class="help-nav">
-          <div class="grid-icon">*</div>
-          <div class="grid-icon">*</div>
-          <div class="grid-icon">*</div>
-          <div class="grid-item">Settings</div>
-          <div class="grid-item">Support</div>
-          <div class="grid-item">Privacy</div>
+    <div class="grid-container" id="home">
+      <div class="header">
+        <div class="grid-container" id="header">
+          <div class="flex-container" id="search">
+            <div id="search-icon">search</div>
+            <form action="#" method="get">
+              <input type="search" id="search-bar" />
+            </form>
+          </div>
+          <div class="grid-container" id="profile">
+            <div id="profile-pic">pic</div>
+            <div id="profile-greet">Hi there,</div>
+            <div id="profile-name">Sunghwan Ko (@kosunghw)</div>
+          </div>
+          <div class="grid-container" id="site-menu">
+            <div id="menu-icon">icon</div>
+            <div id="menu-pic">profile-pic</div>
+            <div id="menu-name">Sunghwan Ko</div>
+          </div>
+          <div class="grid-container" id="buttons">
+            <button>New</button><button>Upload</button><button>Share</button>
+          </div>
         </div>
       </div>
-      <div class="main-content">c</div>
+
+      <div class="sidebar">
+        <div class="grid-container" id="sidebar">
+          <div class="logo">
+            <div class="grid-icon">*</div>
+            <div class="grid-item heading">Dashboard</div>
+          </div>
+          <div class="main-nav">
+            <div class="grid-icon">*</div>
+            <div class="grid-icon">*</div>
+            <div class="grid-icon">*</div>
+            <div class="grid-icon">*</div>
+            <div class="grid-icon">*</div>
+            <div class="grid-icon">*</div>
+            <div class="grid-item">Home</div>
+            <div class="grid-item">Profile</div>
+            <div class="grid-item">Messages</div>
+            <div class="grid-item">History</div>
+            <div class="grid-item">Tasks</div>
+            <div class="grid-item">Communities</div>
+          </div>
+          <div class="help-nav">
+            <div class="grid-icon">*</div>
+            <div class="grid-icon">*</div>
+            <div class="grid-icon">*</div>
+            <div class="grid-item">Settings</div>
+            <div class="grid-item">Support</div>
+            <div class="grid-item">Privacy</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="grid-container" id="main">
+          <div id="project" class="flex-container">
+            <h2>Your projects</h2>
+            <div class="grid-container" id="cards">
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
+          </div>
+          <div class="grid-container" id="news">
+            <div id="announcement">
+              <h3>Announcements</h3>
+              <div class="grid-container" id="announcement-card">
+                <div>
+                  <h4>Site Maintenance</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam distinctio
+                  </p>
+                </div>
+                <div class="middle">
+                  <h4>Community Share Day</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam distinctio alias
+                  </p>
+                </div>
+                <div class="last">
+                  <h4>Updated Privacy Policy</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam distinctio
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="trending">
+              <h3>Trending</h3>
+              <div id="trending-card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
