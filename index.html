@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Admin Dashboard</title>
   </head>
   <body>
@@ -11,19 +17,33 @@
       <div class="header">
         <div class="grid-container" id="header">
           <div class="flex-container" id="search">
-            <div id="search-icon">search</div>
+            <img src="icons/magnify.svg" alt="magnifying glass" />
             <form action="#" method="get">
               <input type="search" id="search-bar" />
             </form>
           </div>
           <div class="grid-container" id="profile">
-            <div id="profile-pic">pic</div>
+            <img
+              src="pictures/43.svg"
+              alt="cartoon character"
+              class="profile-pic"
+              id="profile-pic"
+            />
             <div id="profile-greet">Hi there,</div>
             <div id="profile-name">Sunghwan Ko (@kosunghw)</div>
           </div>
           <div class="grid-container" id="site-menu">
-            <div id="menu-icon">icon</div>
-            <div id="menu-pic">profile-pic</div>
+            <img
+              id="menu-icon"
+              src="icons/bell-ring-outline.svg"
+              alt="ringing icon"
+            />
+            <img
+              src="pictures/43.svg"
+              alt="cartoon character"
+              class="profile-pic"
+              id="menu-pic"
+            />
             <div id="menu-name">Sunghwan Ko</div>
           </div>
           <div class="grid-container" id="buttons">
@@ -35,16 +55,20 @@
       <div class="sidebar">
         <div class="grid-container" id="sidebar">
           <div class="logo">
-            <div class="grid-icon">*</div>
+            <img src="icons/dashboard.svg" alt="dashboard" />
             <div class="grid-item heading">Dashboard</div>
           </div>
           <div class="main-nav">
-            <div class="grid-icon">*</div>
-            <div class="grid-icon">*</div>
-            <div class="grid-icon">*</div>
-            <div class="grid-icon">*</div>
-            <div class="grid-icon">*</div>
-            <div class="grid-icon">*</div>
+            <img src="icons/home.svg" alt="home image" /><img
+              src="icons/profile.svg"
+              alt="profile image"
+            /><img src="icons/message.svg" alt="message" /><img
+              src="icons/history.svg"
+              alt="history image"
+            /><img src="icons/task.svg" alt="tasks image" /><img
+              src="icons/community.svg"
+              alt="community icon"
+            />
             <div class="grid-item">Home</div>
             <div class="grid-item">Profile</div>
             <div class="grid-item">Messages</div>
@@ -53,9 +77,10 @@
             <div class="grid-item">Communities</div>
           </div>
           <div class="help-nav">
-            <div class="grid-icon">*</div>
-            <div class="grid-icon">*</div>
-            <div class="grid-icon">*</div>
+            <img src="icons/settings.svg" alt="settings icon" /><img
+              src="icons/help.svg"
+              alt="support icon"
+            /><img src="icons/profile.svg" alt="privacy icon" />
             <div class="grid-item">Settings</div>
             <div class="grid-item">Support</div>
             <div class="grid-item">Privacy</div>
@@ -65,20 +90,155 @@
 
       <div class="main-content">
         <div class="grid-container" id="main">
-          <div id="project" class="flex-container">
+          <div id="project">
             <h2>Your projects</h2>
             <div class="grid-container" id="cards">
-              <div class="card"></div>
-              <div class="card"></div>
-              <div class="card"></div>
-              <div class="card"></div>
-              <div class="card"></div>
-              <div class="card"></div>
+              <div class="card grid-container">
+                <div class="fill"></div>
+                <div class="flex-container card-item">
+                  <h3>Calculator Project</h3>
+                  <p>
+                    Calculator project is a super cool project. Try this amazing
+                    calculator
+                  </p>
+                  <div class="flex-container icon-container">
+                    <img
+                      src="icons/star-plus-outline.svg"
+                      alt="star icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/eye-plus-outline.svg"
+                      alt="eye icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/share-variant-outline.svg"
+                      alt="share icon"
+                      class="card-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card grid-container">
+                <div class="fill"></div>
+                <div class="flex-container card-item">
+                  <h3>Landing page</h3>
+                  <p>Checkout the cool landing page that I created</p>
+                  <div class="flex-container icon-container">
+                    <img
+                      src="icons/star-plus-outline.svg"
+                      alt="star icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/eye-plus-outline.svg"
+                      alt="eye icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/share-variant-outline.svg"
+                      alt="share icon"
+                      class="card-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card grid-container">
+                <div class="fill"></div>
+                <div class="flex-container card-item">
+                  <h3>Machine Learning Project</h3>
+                  <p>Machine learning project done in CSC311</p>
+                  <div class="flex-container icon-container">
+                    <img
+                      src="icons/star-plus-outline.svg"
+                      alt="star icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/eye-plus-outline.svg"
+                      alt="eye icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/share-variant-outline.svg"
+                      alt="share icon"
+                      class="card-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card grid-container">
+                <div class="fill"></div>
+                <div class="flex-container card-item">
+                  <h3>Portfolio Page</h3>
+                  <p>
+                    Check out my portfolio website and please do not hesitate to
+                    contact me
+                  </p>
+                  <div class="flex-container icon-container">
+                    <img
+                      src="icons/star-plus-outline.svg"
+                      alt="star icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/eye-plus-outline.svg"
+                      alt="eye icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/share-variant-outline.svg"
+                      alt="share icon"
+                      class="card-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card grid-container">
+                <div class="fill"></div>
+                <div class="flex-container card-item">
+                  <h3>Etch-A-Sketch</h3>
+                  <p>
+                    Come and sketch whatever you like! You can adjust the size
+                    of the board and show your creativity.
+                  </p>
+                  <div class="flex-container icon-container">
+                    <img
+                      src="icons/star-plus-outline.svg"
+                      alt="star icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/eye-plus-outline.svg"
+                      alt="eye icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/share-variant-outline.svg"
+                      alt="share icon"
+                      class="card-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card grid-container">
+                <div class="fill"></div>
+                <div class="flex-container card-item">
+                  <h3>Business Website</h3>
+                  <p>Check out my personal business website.</p>
+                  <div class="flex-container icon-container">
+                    <img
+                      src="icons/star-plus-outline.svg"
+                      alt="star icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/eye-plus-outline.svg"
+                      alt="eye icon"
+                      class="card-icon"
+                    /><img
+                      src="icons/share-variant-outline.svg"
+                      alt="share icon"
+                      class="card-icon"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="grid-container" id="news">
+          <div class="flex-container" id="news">
             <div id="announcement">
-              <h3>Announcements</h3>
+              <h2>Announcements</h2>
               <div class="grid-container" id="announcement-card">
                 <div>
                   <h4>Site Maintenance</h4>
@@ -104,8 +264,45 @@
               </div>
             </div>
             <div id="trending">
-              <h3>Trending</h3>
-              <div id="trending-card"></div>
+              <h2>Trending</h2>
+              <div class="grid-container" id="trending-cards">
+                <div class="grid-container trending-card">
+                  <img
+                    src="pictures/43.svg"
+                    alt="cartoon character"
+                    class="trending-pic profile-pic"
+                  />
+                  <div class="trending-user">@kosunghw</div>
+                  <div class="trending-project">Dashboard Project</div>
+                </div>
+                <div class="grid-container trending-card">
+                  <img
+                    src="pictures/funny-dog-3d-illustration.jpg"
+                    alt="dog profile"
+                    class="trending-pic profile-pic"
+                  />
+                  <div class="trending-user">@dog</div>
+                  <div class="trending-project">Etch-A-Sketch</div>
+                </div>
+                <div class="grid-container trending-card">
+                  <img
+                    src="pictures/43.svg"
+                    alt="cartoon character"
+                    class="trending-pic profile-pic"
+                  />
+                  <div class="trending-user">@kosunghw</div>
+                  <div class="trending-project">Calculator Project</div>
+                </div>
+                <div class="grid-container trending-card">
+                  <img
+                    src="pictures/funny-cat-3d-illustration.jpg"
+                    alt="cat profile"
+                    class="trending-pic profile-pic"
+                  />
+                  <div class="trending-user">@cat</div>
+                  <div class="trending-project">Landing page</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
